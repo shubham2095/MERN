@@ -43,21 +43,28 @@
 // console.log(obj);
 
 
-let obj = {
-    name :"shubham",
-    age : 20,
-    ispresent : true,
-    address : {
-        city : "Delhi",
-        country : "India"
-    },
-    colors : ["Red", "Green", "Blue"],
-    sayhi : () =>{
-        console.log("hello")
-    }
+// let obj = {
+//     name :"shubham",
+//     age : 20,
+//     ispresent : true,
+//     address : {
+//         city : "Delhi",
+//         country : "India"
+//     },
+//     colors : ["Red", "Green", "Blue"],
+//     sayhi : () =>{
+//         console.log("hello")
+//     }
 
-}
+// }
 
-for (let item in obj) {
-    console.log(item, obj[item]);
-}
+// for (let item in obj) {
+//     console.log(item, obj[item]);
+// }
+
+
+let score = 10;
+let match = 20;
+let win = true
+let obj = {score, matchnumber : match, win}
+console.log(obj);
