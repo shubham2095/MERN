@@ -32,12 +32,32 @@
 
 
 
+// let obj = {
+//     model : "version0",
+//     color : "red"
+// }
+
+// obj.model = "Version1"
+// obj.color = "Green"
+
+// console.log(obj);
+
+
 let obj = {
-    model : "version0",
-    color : "red"
+    name :"shubham",
+    age : 20,
+    ispresent : true,
+    address : {
+        city : "Delhi",
+        country : "India"
+    },
+    colors : ["Red", "Green", "Blue"],
+    sayhi : () =>{
+        console.log("hello")
+    }
+
 }
 
-obj.model = "Version1"
-obj.color = "Green"
-
-console.log(obj);
+for (let item in obj) {
+    console.log(item, obj[item]);
+}
