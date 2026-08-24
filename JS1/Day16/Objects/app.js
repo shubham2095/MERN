@@ -68,3 +68,7 @@ let match = 20;
 let win = true
 let obj = {score, matchnumber : match, win}
 console.log(obj);
+
+delete obj.score
+
+console.log(obj);
