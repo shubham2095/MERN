@@ -32,18 +32,22 @@
 
 // right angle triangle
 
-// let n = 10
+// *
+// **
+// ***
+// ****
+// let n = 4
 // for (let rows = 1; rows <= n; rows++) {
 
 //     let str = ""
 //     for(let column = 1; column <= rows; column++) {
-//         // str += "* "
-//             if (rows == 1 || column == 1 || column == rows) {
-//             str += "* "
-//         }
-//         else{
-//             str += "  "
-//         }
+//        // str += "* "
+        //     if (rows == 1 || column == 1 || column == rows) {
+        //     str += "* "
+        // }
+        // else{
+        //     str += "  "
+        // }
 //     }
 //     console.log(str);
 // }
@@ -109,5 +113,111 @@
 //     }
 //     console.log(str);
 // }
+
+
+// A
+// B C
+// D E F 
+// G H I J
+
+// let n = 4
+// let count = 1
+// for (let row = 1; row <= n; row++) {
+//         let str = ""
+//         for (let star = 1; star <= row; star++) {
+//                 str += String.fromCharCode(64 + count) + " "
+//                 count++
+
+//         }
+//         console.log(str);
+// }
+
+
+
+// 1
+// 2 3
+// 4 5 6
+// 7 8 9 10
+
+
+
+// 1
+// 2 2
+// 3 3 3
+
+
+// 1
+// 1 2
+// 1 2 3
+// 1 2 3 4
+
+// let n = 4
+// let count = 1
+// for (let row = 1; row <= n; row++) {
+//         let str = ""
+//         for(let star = 1; star <= row; star++) {
+//                 // str += count + " "
+//                 // count++
+//                 // str += row + " "
+//                 str += star + " "
+//         }
+//         console.log(str);
+// }
+
+// A B C D
+// E F G 
+// H I
+// J
+
+// let n = 4
+// let count = 1
+// for(let row = 1; row <= n; row++) {
+//         let str = ""
+//         for (let star =1; star <= n-row+1; star++) {
+//                 str += String.fromCharCode(64 + count) + " "
+//                 count++
+//         }
+//         console.log(str);
+// }
+
+
+//    1
+//   2 3
+//  4 5 6
+// 7 8 9 10
+
+// let n = 4
+// let count = 1
+// for (let row = 1; row <= n; row++){
+//         let str = ""
+//         for (let space = 1; space <= n-row; space++) {
+//                 str += "  "
+//         }
+//         for (let star = 1; star <= row; star++) {
+//                 str += count + " "
+//                 count++
+//         }
+//         console.log(str);
+// }
+
+
+// A B C D
+//   E F G 
+//     H I 
+//       J 
+
+let n = 4
+let count = 1
+for (let row = 1; row <= n; row++) {
+        let str = ""
+        for (space = 1; space <= row - 1; space++) {
+                str += "  "
+        }
+        for (let star = 1; star <= n-row+1; star++){
+                str += String.fromCharCode(64 + count) + ' '
+                count++
+        }
+        console.log(str);
+}
 
 
