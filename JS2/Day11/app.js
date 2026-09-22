@@ -1,0 +1,31 @@
+function lastOccurrence (arr, x) {
+    let start = 0
+    let end = arr.length - 1
+    while (start < end) {
+        let mid = Math.floor((start + end) / 2)
+        if (arr[mid] == x) {
+            start = mid
+        }
+        else if (arr[mid]  < x){
+            end = mid
+        }
+    }
+    return start
+
+}
+console.log(lastOccurrence([1,2,3,4,4,4,6,7,8,8,8,9,10], 8));
+
+
+
+let arr = [99, 0, 10,1,3,4,6 -3,10,2,3,3,4,5]
+let target = 10
+
+function linearSearchLastOccurrence (arr, target) {
+    for (let i = arr.length - 1; i >= 0; i--) {
+        if (arr[i] == target) {
+            return i
+        }
+    }
+    return - 1
+}
+console.log(linearSearchLastOccurrence(arr, target));
