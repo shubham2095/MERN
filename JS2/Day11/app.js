@@ -1,19 +1,24 @@
 function lastOccurrence (arr, x) {
     let start = 0
     let end = arr.length - 1
+    let ans = -1
     while (start < end) {
         let mid = Math.floor((start + end) / 2)
         if (arr[mid] == x) {
-            start = mid
+            ans = mid
+            start = mid + 1
         }
         else if (arr[mid]  < x){
-            end = mid
+            start = mid + 1
+        }
+        else {
+            end = mid - 1
         }
     }
-    return start
+    return ans
 
 }
-console.log(lastOccurrence([1,2,3,4,4,4,6,7,8,8,8,9,10], 8));
+console.log(lastOccurrence([1,2,4,4,4,5,6,6,6,8], 6));
 
 
 
