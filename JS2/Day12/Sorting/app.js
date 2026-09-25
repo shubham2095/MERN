@@ -49,7 +49,7 @@
 
 
 
-
+// Question 1
 
 // let arr = [5, 2, 8, 1, 3]
 // arr.sort((a,b) => {
@@ -57,6 +57,8 @@
 // })
 // console.log(arr)
 
+
+// Question 2
 
 
 // let arr2 = [10, 4, 7, 2, 9]
@@ -67,11 +69,16 @@
 // console.log(arr2)
 
 
+// Question 3
+
 
 // let arr3 = ["banana", "apple", "mango", "cherry"]
 // arr3.sort()
 // console.log(arr3)
 
+
+
+// Question 4
 
 
 // let arr4 = ["Raj", "Amit", "Ram", "Karan", "Bob"]
@@ -99,6 +106,8 @@
 
 
 
+// Question 5
+
 
 // let arr = [
 //     {name:"Rahul",age:20}, 
@@ -117,6 +126,10 @@
 // })
 
 // console.log(arr)
+
+
+
+// Question 6
 
 
 // let arr = [
@@ -139,6 +152,10 @@
 
 
 
+
+// Question 7
+
+
 // let arr = [
 // {name:"A",price:500,rating:4.2}, 
 // {name:"B",price:300,rating:4.5},
@@ -156,6 +173,11 @@
 // console.log(arr);
 
 
+
+// Question 8
+
+
+
 // let arr = [
 //     {name:"A",marks:90,age:21}, 
 //     {name:"B",marks:90,age:19}, 
@@ -169,6 +191,11 @@
 //     return b.marks - a.marks
 // })
 // console.log(arr);
+
+
+
+// Question 9
+
 
 // let arr = [4, 4, 2, 2, 2, 3, 3, 1]
 // let obj = {}
@@ -185,6 +212,10 @@
 // console.log(arr);
 
 
+
+
+// Question 10
+
 // let arr = ["cat", "elephant", "dog", "tiger", "ant"]
 
 // arr.sort((a , b) => {
@@ -194,6 +225,12 @@
 //     return b.length - a.length
 // })
 // console.log(arr);
+
+
+
+
+
+// Question 11
 
 
 // let arr = [
@@ -215,19 +252,102 @@
 // console.log(arr);
 
 
-let arr = [
-    {title:"A",rating:8.5,year:2022}, 
-    {title:"B",rating:9.0,year:2020},
-    {title:"C",rating:8.5,year:2019}
-]
 
-arr.sort((a, b) => {
-    if (a.rating == b.rating) {
-        if (a.year == b.year) {
-            return a.title.localeCompare(b.title) 
-        }
-        return a.year - b.year
+
+// Question 12
+
+
+// let arr = [
+//     {title:"A",rating:8.5,year:2022}, 
+//     {title:"B",rating:9.0,year:2020},
+//     {title:"C",rating:8.5,year:2019}
+// ]
+
+// arr.sort((a, b) => {
+//     if (a.rating == b.rating) {
+//         if (a.year == b.year) {
+//             return a.title.localeCompare(b.title) 
+//         }
+//         return a.year - b.year
+//     }
+//     return b.rating - a.rating
+// })
+// console.log(arr);
+
+
+
+
+// Question 15
+
+// let arr = [
+//     {id:1,status:"Completed",amount:500}, 
+//     {id:2,status:"Pending",amount:200},
+//     {id:3,status:"Pending",amount:800}, 
+//     {id:4,status:"Processing",amount:400}
+// ]
+
+// const priority = {
+//     Completed : 3,
+//     Processing : 2,
+//     Pending : 1
+// }
+
+// arr.sort ((a, b) => {
+//     if(a.status == b.status) {
+//         return a.amount - b.amount
+//     }
+//     return priority[a.status] - priority[b.status]
+// })
+// console.log(arr);
+
+
+// Question 18
+
+// let arr = [
+//     {task:"A",priority:"High",deadline:"2026-10-10"},   
+//     {task:"B",priority:"High",deadline:"2026-09-25"},
+//     {task:"C",priority:"Low",deadline:"2026-09-20"},
+//     {task:"D",priority:"Medium",deadline:"2026-09-24"}
+// ]
+
+// let p = {
+//     high : 3,
+//     medium : 2,
+//     low : 1
+// }
+
+// arr.sort((a , b) => {
+//     if(a.priority == b.priority) {
+//         return a.deadline.localeCompare(b.deadline)
+//     }
+//     return p[a.priority] - p[b.priority]
+// })
+// console.log(arr);
+
+
+
+var smallestIndex = function(nums) {
+    for(let i = 0; i<nums.length; i++) {
+    let num = nums[i]
+    let sum = 0
+    while (num > 0) {
+        sum += num % 10
+        num = Math.floor(num / 10)
     }
-    return b.rating - a.rating
-})
-console.log(arr);
+    if (sum == i) {
+        return i
+    }
+    }
+    return -1
+};
+console.log(smallestIndex([1,10,11]));
+
+
+function linearSearchFirstOccurrence(nums) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] == arr[0]) {
+            return i
+        }
+    }
+    return -1
+}
