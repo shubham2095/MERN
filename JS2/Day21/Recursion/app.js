@@ -1,4 +1,4 @@
-let str = "shubham"
+let str = "Shubham"
 
 for(let i = 0; i < 5; i++) {
 console.log(str);
@@ -31,3 +31,32 @@ function mySecondRecFn(n) {
 mySecondRecFn(5)
 
 
+function print(i , n) {
+    if(i > n) {
+        return
+    }
+    console.log(i);
+    print(i + 1, n)
+}
+print(1, 4)
+
+
+
+function println(i , n) {
+    if(i > n) {
+        return
+    } 
+    println(i + 1, n)
+    console.log(i);
+}
+println(1, 4)
+
+
+function sum(i , n , ans) {
+    if(i > n ) {
+        return ans
+    }
+    ans += i
+    return sum(i + 1, n , ans)
+}
+console.log(sum(1, 10, 0))
