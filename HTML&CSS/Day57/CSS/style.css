@@ -1,0 +1,74 @@
+/* h1 {
+    background-color: pink;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 1100px;
+    margin-bottom: 20px;
+    padding: auto;
+}
+
+div {
+    background-color: yellow;
+}
+
+#one {
+    background-color: rgb(4, 4, 4);
+}
+
+
+.oneC {
+    color: rgb(44, 228, 102);
+}
+
+p {
+    background-color: blueviolet;
+}
+
+#box .inner {
+    background-color: red;
+} */
+
+/* 
+div p {
+  background-color: yellow;
+}
+
+
+div > p {
+  background-color: pink;
+} */
+
+
+#btn:hover {
+    background-color: pink;
+    height: 400px;
+    width: 800px;
+}
+
+
+p:first-child {
+    background-color: red;
+}
+
+p:last-child {
+    background-color: green;
+}
+
+p:nth-child(2n) {
+    background-color: yellow;
+}
+
+#one {
+    background-color: red;
+}
+#one::selection {
+    background-color: lightpink;
+}
+
+header[class="1"] {
+    background-color: rebeccapurple;
+}
+
+a[target="_blank"] {
+    color: chartreuse;
+}
