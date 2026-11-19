@@ -1,0 +1,29 @@
+.box1 {
+    border: 10px double black;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+}
+
+.box {
+    border: 1px solid rgb(73, 73, 207);
+    width: 200px;
+    /* flex-grow: 1; */
+}
+
+main {
+    height: 50vh;
+    width: 100vw;
+    border: 5px solid black;
+    display: flex;
+    /* flex-direction: row; */
+    /* gap: 20px; */
+    /* align-items: center;
+    justify-content: space-around; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-wrap: wrap;
+    row-gap: 5px;
+    column-gap: 8px;
+}
