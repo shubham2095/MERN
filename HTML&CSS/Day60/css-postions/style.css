@@ -1,0 +1,43 @@
+.parent {
+    border: 2px solid black;
+    display: flex;
+    width: fit-content;
+}
+
+.child {
+    height: 200px;
+    width: 200px;
+    border: 1px solid blue;
+    background-color: rgb(13, 255, 0);
+}
+
+#static-special{
+    top: 100px;
+}
+
+#relative-special{
+    position: relative;
+    bottom: 100px;
+    left: 100px;
+}
+
+#fixed-special {
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    background-color: pink;
+}
+
+#absolute-special{
+    position: absolute;
+    left: 500px;
+    bottom: 100px;
+    background-color: red;
+}
+
+#sticky-special{
+    position: sticky;
+    top: 20px;
+    left: 200px;
+    background-color: yellow;
+}

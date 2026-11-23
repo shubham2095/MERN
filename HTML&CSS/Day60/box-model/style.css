@@ -1,0 +1,58 @@
+/* div {
+  border: 2px solid  green;
+  padding: 20px;
+  margin: 20px;
+} */
+
+/* 
+#ok2 {
+  padding: 10px;
+  border: 5px solid rgb(155, 36, 36);
+  margin: auto;
+  color: white;
+}
+
+
+body {
+    background-color: black;
+
+}
+
+#ok {
+    border: 5px solid white;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px 30px 40px;
+    margin: 10px 20px 30px;
+    
+} */
+
+
+/* #ok {
+    border-bottom: 10px solid white;
+    color: white;
+    border-right: 5px solid blueviolet;
+} */
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    /* box-sizing: border-box; */
+}
+
+#box {
+    height: 200px;
+    width: 200px;
+    border: 5px solid pink;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#box2 {
+    height: 200px;
+    width: 200px;
+    border: 10px solid lightcoral;
+    padding: 10px;
+}
